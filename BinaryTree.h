@@ -362,6 +362,7 @@ void
 // This is a right subtree.
 // Use a line by line display, order nodes from left to
 //   right, draw connecting lines.
+
 void 
    BinaryTree:: displayRight( std::ostream & outfile, 
    BinaryNode * subtree, std::string prefix )
@@ -378,7 +379,7 @@ void
    }
 }
 
-
+//L8P1
 long 
 BinaryTree::size(const BinaryNode * subtree)
 {
@@ -390,7 +391,7 @@ BinaryTree::size(const BinaryNode * subtree)
 }
 
 
-
+//L8P2
 long 
    BinaryTree:: height( const BinaryNode * subtree )
 {
@@ -415,7 +416,7 @@ long
 
 }
 
-
+//L8P3
 long 
    BinaryTree:: leaves( const BinaryNode * subtree )
 {
@@ -430,7 +431,7 @@ long
 	return leaves(subtree->left_) + leaves(subtree->right_);
 }
 
-
+//L8P4
 short 
    BinaryTree:: leftmost( const BinaryNode * subtree )
 {
@@ -454,6 +455,7 @@ void
    }
       
 }
+//L8P5
 void BinaryTree::postorder(std::vector<short> & traversal, const BinaryNode * subtree)
 {
 	if (subtree != NULL)
